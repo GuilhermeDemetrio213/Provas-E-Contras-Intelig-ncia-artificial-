@@ -8,25 +8,27 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e2f; /* Fundo escuro metálico */
+            color: #e0e0e0;
             line-height: 1.6;
             scroll-behavior: smooth;
         }
         header {
-            background: #007bff;
+            background: linear-gradient(90deg, #0f0f3e, #1a73e8);
             color: white;
-            padding: 20px 0;
+            padding: 30px 0;
             text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
         nav {
-            background: #0056b3;
-            padding: 10px 0;
+            background: #121223;
+            padding: 12px 0;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         }
         nav a {
-            color: white;
+            color: #00d9ff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -35,26 +37,32 @@
             text-decoration: underline;
         }
         main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background: #2c2c3d;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         }
         h2 {
-            color: #007bff;
+            color: #00d9ff;
             margin-top: 30px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 0 12px rgba(0,217,255,0.3);
         }
         p {
             margin-bottom: 15px;
         }
         footer {
             text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-            background: #007bff;
-            color: white;
+            padding: 25px 0;
+            margin-top: 30px;
+            background: #0f0f3e;
+            color: #ccc;
         }
     </style>
 </head>
@@ -65,50 +73,49 @@
 </header>
 
 <nav>
-    <a href="#efficiency">Eficiência e Produtividade</a>
-    <a href="#healthcare">Saúde e Medicina</a>
-    <a href="#education">Educação e Acessibilidade</a>
-    <a href="#jobloss">Perda de Empregos</a>
-    <a href="#ethics">Ética e Controle</a>
-    <a href="#privacy">Privacidade e Preconceito</a>
+    <a href="#efficiency">Eficiência</a>
+    <a href="#healthcare">Saúde</a>
+    <a href="#education">Educação</a>
+    <a href="#jobloss">Empregos</a>
+    <a href="#ethics">Ética</a>
+    <a href="#privacy">Privacidade</a>
 </nav>
 
 <main>
     <section id="efficiency">
         <h2>1. Prós: Eficiência e Produtividade</h2>
-        <p>A Inteligência Artificial (IA) tem o potencial de aumentar a eficiência e a produtividade nas empresas. Com a automação de tarefas repetitivas, as empresas podem reduzir custos e liberar os funcionários para se concentrarem em atividades mais estratégicas.</p>
-        <p>Exemplos incluem chatbots que atendem clientes 24/7, sistemas de gerenciamento de estoque que preveem a demanda e algoritmos que otimizam processos de produção.</p>
+        <img src="https://cdn.pixabay.com/photo/2019/04/08/12/38/robot-4111582_1280.jpg" alt="Robô produtividade" />
+        <p>A IA aumenta a eficiência nas empresas com automação de tarefas repetitivas, reduzindo custos e liberando funcionários para tarefas estratégicas.</p>
     </section>
 
     <section id="healthcare">
         <h2>2. Prós: Saúde e Medicina</h2>
-        <p>A IA está revolucionando a área da saúde, sendo utilizada em diagnósticos, cirurgias e na criação de medicamentos. Sistemas de IA podem analisar grandes volumes de dados médicos para identificar padrões e auxiliar médicos na tomada de decisões.</p>
-        <p>Por exemplo, algoritmos de aprendizado de máquina são usados para detectar doenças em imagens médicas, como câncer, com alta precisão. Além disso, robôs cirúrgicos assistidos por IA podem realizar procedimentos complexos com maior precisão e menos invasão.</p>
-        <p>Na pesquisa de medicamentos, a IA acelera o processo de descoberta, analisando interações moleculares e prevendo a eficácia de novos compostos.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/08/06/11/36/doctor-2596629_1280.jpg" alt="IA na medicina" />
+        <p>IA revoluciona a saúde em diagnósticos, cirurgias e desenvolvimento de medicamentos, analisando dados médicos e auxiliando decisões clínicas.</p>
     </section>
 
     <section id="education">
         <h2>3. Prós: Educação e Acessibilidade</h2>
-        <p>A IA facilita o aprendizado personalizando a experiência educacional. Plataformas de aprendizado adaptativo utilizam algoritmos para ajustar o conteúdo com base no desempenho do aluno, oferecendo um caminho de aprendizado mais eficaz.</p>
-        <p>Além disso, a IA pode ajudar na acessibilidade, fornecendo ferramentas como tradutores automáticos e assistentes virtuais que ajudam alunos com dificuldades de aprendizado a superar barreiras.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/03/26/13/09/online-1282333_1280.jpg" alt="IA na educação" />
+        <p>IA personaliza o aprendizado com plataformas adaptativas e auxilia na inclusão com assistentes e tradutores automáticos.</p>
     </section>
 
     <section id="jobloss">
         <h2>4. Contras: Perda de Empregos</h2>
-        <p>Um dos principais riscos associados à IA é a perda de empregos. À medida que as máquinas se tornam mais capazes de realizar tarefas que antes eram feitas por humanos, muitos trabalhadores podem enfrentar a substituição.</p>
-        <p>Embora a IA crie novas oportunidades de emprego em setores emergentes, a transição pode ser difícil para aqueles cujas habilidades não se alinham com as novas demandas do mercado de trabalho.</p>
+        <img src="https://cdn.pixabay.com/photo/2017/07/31/11/39/lost-place-2555813_1280.jpg" alt="Perda de empregos" />
+        <p>Com máquinas assumindo tarefas humanas, muitos empregos tradicionais estão em risco sem a requalificação da força de trabalho.</p>
     </section>
 
     <section id="ethics">
         <h2>5. Contras: Ética e Controle</h2>
-        <p>A IA levanta questões éticas significativas, especialmente quando se trata de decisões automatizadas. A falta de supervisão humana em sistemas de IA pode levar a decisões injustas ou prejudiciais.</p>
-        <p>Por exemplo, algoritmos de recrutamento podem perpetuar preconceitos se forem treinados em dados tendenciosos. É crucial que haja um controle ético rigoroso sobre como a IA é implementada e utilizada.</p>
+        <img src="https://cdn.pixabay.com/photo/2020/03/11/14/39/ai-4928396_1280.jpg" alt="Ética na IA" />
+        <p>Decisões sem supervisão humana podem gerar injustiças. Algoritmos devem ser auditados para evitar viés e abuso.</p>
     </section>
 
     <section id="privacy">
         <h2>6. Contras: Privacidade e Preconceito</h2>
-        <p>A IA pode invadir a privacidade dos indivíduos, coletando e analisando dados pessoais sem consentimento adequado. Isso levanta preocupações sobre como as informações são usadas e quem tem acesso a elas.</p>
-        <p>Além disso, a IA pode reproduzir discriminações existentes, como viés racial ou de gênero, se não for cuidadosamente monitorada e ajustada. É fundamental garantir que a tecnologia seja desenvolvida e utilizada de maneira responsável.</p>
+        <img src="https://cdn.pixabay.com/photo/2016/11/29/02/04/hacker-1863372_1280.jpg" alt="Privacidade e IA" />
+        <p>IA pode coletar e usar dados pessoais sem controle, além de reforçar preconceitos existentes nos dados.</p>
     </section>
 </main>
 
