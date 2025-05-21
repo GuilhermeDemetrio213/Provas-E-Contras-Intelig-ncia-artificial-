@@ -64,6 +64,37 @@
             background: #0f0f3e;
             color: #ccc;
         }
+        /* Estilo para vídeo responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            padding-top: 25px;
+            height: 0;
+            margin-bottom: 20px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0,217,255,0.5);
+        }
+        /* Imagens lado a lado na seção do vídeo */
+        .image-row {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .image-row img {
+            max-width: 45%;
+            box-shadow: 0 0 10px rgba(0,217,255,0.3);
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
@@ -82,6 +113,23 @@
 </nav>
 
 <main>
+
+    <!-- Nova seção: Exemplo de vídeo e imagens -->
+    <section id="video-example">
+        <h2>Exemplo de Vídeo e Imagens</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/-IOMmujbSZg" 
+                title="Vídeo exemplo" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="image-row">
+            <img src="https://images.openai.com/thumbnails/0bc8277b614fc064167b686225f56ee6.png" alt="Inteligência Artificial e Eficiência" />
+            <img src="https://images.openai.com/thumbnails/57824ad1398b87802db57dc9041bcedf.png" alt="IA na medicina" />
+        </div>
+    </section>
+
     <section id="efficiency">
         <h2>1. Prós: Eficiência e Produtividade</h2>
         <img src="https://images.openai.com/thumbnails/0bc8277b614fc064167b686225f56ee6.png" alt="Inteligência Artificial e Eficiência" />
