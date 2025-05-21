@@ -5,11 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Prós e Contras da Inteligência Artificial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #1e1e2f; /* Fundo escuro metálico */
+            background-color: #1e1e2f; /* Fundo escuro */
             color: #e0e0e0;
             line-height: 1.6;
             scroll-behavior: smooth;
@@ -40,7 +41,7 @@
             max-width: 900px;
             margin: 30px auto;
             padding: 25px;
-            background: #2c2c3d;
+            background: rgba(44, 44, 61, 0.9); /* Fundo semi-transparente */
             border-radius: 10px;
             box-shadow: 0 4px 20px rgba(0,0,0,0.4);
         }
@@ -48,11 +49,10 @@
             color: #00d9ff;
             margin-top: 30px;
         }
-        img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin: 15px 0;
-            box-shadow: 0 0 12px rgba(0,217,255,0.3);
+        .icon {
+            font-size: 50px;
+            color: #1a73e8;
+            margin-bottom: 10px;
         }
         p {
             margin-bottom: 15px;
@@ -64,36 +64,22 @@
             background: #0f0f3e;
             color: #ccc;
         }
-        /* Estilo para vídeo responsivo */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%; /* 16:9 ratio */
-            padding-top: 25px;
-            height: 0;
-            margin-bottom: 20px;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+        /* Estilo do botão "Voltar ao Topo" */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #1a73e8;
+            color: white;
             border: none;
-            border-radius: 8px;
-            box-shadow: 0 0 12px rgba(0,217,255,0.5);
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            display: none; /* Inicialmente escondido */
         }
-        /* Imagens lado a lado na seção do vídeo */
-        .image-row {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 10px;
-        }
-        .image-row img {
-            max-width: 45%;
-            box-shadow: 0 0 10px rgba(0,217,255,0.3);
-            border-radius: 8px;
+        .back-to-top:hover {
+            background: #0f0f3e;
         }
     </style>
 </head>
@@ -114,62 +100,54 @@
 
 <main>
 
-    <!-- Nova seção: Exemplo de vídeo e imagens -->
-    <section id="video-example">
-        <h2>Exemplo de Vídeo e Imagens</h2>
-        <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/-IOMmujbSZg" 
-                title="Vídeo exemplo" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="image-row">
-            <img src="https://images.openai.com/thumbnails/0bc8277b614fc064167b686225f56ee6.png" alt="Inteligência Artificial e Eficiência" />
-            <img src="https://images.openai.com/thumbnails/57824ad1398b87802db57dc9041bcedf.png" alt="IA na medicina" />
-        </div>
-    </section>
-
     <section id="efficiency">
-        <h2>1. Prós: Eficiência e Produtividade</h2>
-        <img src="https://images.openai.com/thumbnails/0bc8277b614fc064167b686225f56ee6.png" alt="Inteligência Artificial e Eficiência" />
+        <h2><i class="fas fa-cogs icon"></i> 1. Prós: Eficiência e Produtividade</h2>
         <p>A IA aumenta a eficiência nas empresas com automação de tarefas repetitivas, reduzindo custos e liberando funcionários para tarefas estratégicas.</p>
     </section>
 
     <section id="healthcare">
-        <h2>2. Prós: Saúde e Medicina</h2>
-        <img src="https://images.openai.com/thumbnails/57824ad1398b87802db57dc9041bcedf.png" alt="IA na medicina" />
+        <h2><i class="fas fa-hospital icon"></i> 2. Prós: Saúde e Medicina</h2>
         <p>IA revoluciona a saúde em diagnósticos, cirurgias e desenvolvimento de medicamentos, analisando dados médicos e auxiliando decisões clínicas.</p>
     </section>
 
     <section id="education">
-        <h2>3. Prós: Educação e Acessibilidade</h2>
-        <img src="https://images.openai.com/thumbnails/4def78160842017b5801d0e0b69a1291.jpeg" alt="IA na educação" />
+        <h2><i class="fas fa-book icon"></i> 3. Prós: Educação e Acessibilidade</h2>
         <p>IA personaliza o aprendizado com plataformas adaptativas e auxilia na inclusão com assistentes e tradutores automáticos.</p>
     </section>
 
     <section id="jobloss">
-        <h2>4. Contras: Perda de Empregos</h2>
-        <img src="https://images.openai.com/thumbnails/d337001e2d6868100d6b8d289d0eace7.jpeg" alt="Perda de empregos com IA" />
+        <h2><i class="fas fa-user-slash icon"></i> 4. Contras: Perda de Empregos</h2>
         <p>Com máquinas assumindo tarefas humanas, muitos empregos tradicionais estão em risco sem a requalificação da força de trabalho.</p>
     </section>
 
     <section id="ethics">
-        <h2>5. Contras: Ética e Controle</h2>
-        <img src="https://images.openai.com/thumbnails/d337001e2d6868100d6b8d289d0eace7.jpeg" alt="Ética na IA" />
+        <h2><i class="fas fa-balance-scale icon"></i> 5. Contras: Ética e Controle</h2>
         <p>Decisões sem supervisão humana podem gerar injustiças. Algoritmos devem ser auditados para evitar viés e abuso.</p>
     </section>
 
     <section id="privacy">
-        <h2>6. Contras: Privacidade e Preconceito</h2>
-        <img src="https://images.openai.com/thumbnails/d337001e2d6868100d6b8d289d0eace7.jpeg" alt="Privacidade e IA" />
+        <h2><i class="fas fa-lock icon"></i> 6. Contras: Privacidade e Preconceito</h2>
         <p>IA pode coletar e usar dados pessoais sem controle, além de reforçar preconceitos existentes nos dados.</p>
     </section>
 </main>
 
+<button class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Voltar ao Topo</button>
+
 <footer>
     &copy; 2024 | Prós e Contras da Inteligência Artificial
 </footer>
+
+<script>
+    // Mostrar o botão "Voltar ao Topo" quando o usuário rolar para baixo
+    window.onscroll = function() {
+        const button = document.querySelector('.back-to-top');
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+</script>
 
 </body>
 </html>
